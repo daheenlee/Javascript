@@ -7,17 +7,24 @@
 
 
 const password = window.prompt(`비밀번호를 설정해주십시오`);
+let error = 0
 
-if(password.length <4 ||  password.length> 12 );{window,console.log("비밀번호 길이안맞음");}
-
-
-const nothave = password.includes(`@`) || password.includes(`!`)|| password.includes(`#`) ;
-
-const isstarwithit = password.startwith("it");
+if(password.length <4 ||  password.length> 12 ){window.console.log("비밀번호 길이안맞음");
+    error = error + 1;
+}
 
 
+ if ( ! password.includes(`@`) && !password.includes(`!`) && !password.includes(`#`) ){window.console.log("비밀번호에 @,!,#가 없습니다.");
+   error = error + 1; }
 
-else if {password.startsWith("it")};
+if ( !password.startsWith("it"))  {window.console.log("비밀번호가 it로 시작하지 않습니다");
+   error = error + 1;
+}
 
 
-if()
+if (error !== 0) {
+  console.log(error);
+} else {
+  console.log("올바르게 비밀번호 만들었습니다.");
+}
+
