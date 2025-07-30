@@ -1,0 +1,17 @@
+.box { display: flex;
+flex-direction: column;
+background-color: antiquewhite;
+padding-bottom: 10px;
+padding-left: 20px;
+line-height: 30px};
+
+.smallbox{ display: flex;
+    flex-direction: row;
+    padding: auto;
+    gap: 10px ;
+    
+}
+
+.num {background-color: white;
+width:10px;
+height:20px;}
