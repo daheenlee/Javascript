@@ -1,17 +1,38 @@
 .box { display: flex;
 flex-direction: column;
-background-color: antiquewhite;
+background-color: gainsboro;
 padding-bottom: 10px;
 padding-left: 20px;
-line-height: 30px};
+line-height: 30px;
+padding: 10px;}
+
+.box input 
+{background-color: gainsboro;}
 
 .smallbox{ display: flex;
     flex-direction: row;
     padding: auto;
-    gap: 10px ;
+
+    gap: 0x ;
+    background-color: gainsboro;
     
 }
 
 .num {background-color: white;
 width:10px;
-height:20px;}
+height: 10px;
+padding: 10px;
+gap:10px;
+display: flex;
+align-items: center;}
+
+.button{
+    padding: 0px;
+    margin: 0px;
+    gap:-50x;
+}
+
+.texttwo{
+    padding-left: 100px;
+}
+
